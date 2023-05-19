@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    style="@style/SCREEN">
+
+    <ImageView
+        android:id="@+id/imageViewInfoButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsRecView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wordCountTV"
+        android:layout_below="@+id/showingHintTV"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/background4"
+        android:padding="15dp"
+        android:scrollbarThumbVertical="@color/black" />
+
+    <Button
+        android:id="@+id/btnReset"
+        style="@style/BUTTON"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <Button
+        android:id="@+id/btnCheck"
+        style="@style/BUTTON"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnReset"
+        android:text="@string/check"
+        android:textSize="20sp"
+        tools:ignore="VisualLintOverlap" />
+
+    <View
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btnReset"
+        android:layout_alignTop="@+id/btnReset"
+        android:layout_alignEnd="@+id/btnReset"
+        android:layout_alignBottom="@+id/btnReset"
+        android:background="@drawable/background4" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+
+        android:layout_alignStart="@+id/btnCheck"
+        android:layout_alignTop="@+id/btnCheck"
+        android:layout_alignEnd="@+id/btnCheck"
+
+        android:layout_alignBottom="@+id/btnCheck"
+        android:background="@drawable/background4" />
+
+    <TextView
+        android:id="@+id/tvAnswering"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/backgroundbutton"
+        android:backgroundTint="@color/black"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:text="@string/textview"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/showingHintTV"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAnswering"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/timeShower"
+        android:background="@drawable/background2"
+        android:padding="10dp"
+        android:text="@string/hint"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/wordCountTV"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backgroundbutton2"
+        android:backgroundTint="@color/white"
+        android:padding="3dp"
+        android:text="@string/word_1_1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/timeShower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:padding="5dp"
+        android:background="@drawable/background2"
+        android:text="@string/hkh" />
+
+
+</RelativeLayout>

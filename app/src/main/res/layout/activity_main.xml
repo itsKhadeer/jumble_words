@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style ="@style/SCREEN">
+
+
+    <TextView
+        android:id="@+id/tvGridSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wordNText"
+        android:layout_alignStart="@+id/wordNText"
+        style="@style/TEXT"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/textoutline"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="40dp"
+        android:text="Grid Size"
+        android:textFontWeight="500"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/wordJumble"
+        android:layout_width="224dp"
+        android:layout_height="163dp"
+        android:layout_below="@+id/Crown"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:shadowColor="#000000"
+        android:shadowDx="-10.5"
+        android:shadowDy="-10.5"
+        android:shadowRadius="1"
+        android:text="  WORD JUMBLE"
+        android:textColor="#87CEEB"
+        android:textFontWeight="1000"
+        android:textSize="55sp" />
+
+    <ImageView
+        android:id="@+id/Crown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/crown" />
+
+    <ImageView
+        android:id="@+id/Line1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Crown"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="100dp"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/Line2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Crown"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="85dp"
+        app:srcCompat="@drawable/line" />
+
+    <TextView
+        android:id="@+id/wordNText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wordJumble"
+        android:layout_alignStart="@+id/wordJumble"
+        android:layout_marginStart="-20dp"
+        android:background="@drawable/textoutline"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="40dp"
+        android:text="Word 1"
+        android:textFontWeight="500"
+        style="@style/TEXT"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hintNText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wordNText"
+        android:layout_alignStart="@+id/wordNText"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/textoutline"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="30dp"
+        style="@style/TEXT"
+        android:paddingEnd="30dp"
+        android:paddingBottom="40dp"
+        android:text=" Hint 1"
+        android:textFontWeight="500"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextWord"
+        android:layout_alignTop="@+id/editTextWord"
+        android:layout_alignEnd="@+id/editTextWord"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background2"
+        style="@style/TEXT"
+        android:ems="7"
+        android:hint="Enter"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextGridSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextWord"
+        android:layout_alignTop="@+id/editTextWord"
+        android:layout_alignEnd="@+id/editTextWord"
+        style="@style/TEXT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/background2"
+        android:ems="7"
+        android:hint="Enter"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/background2"
+        android:ems="7"
+        android:hint="Enter"
+        style="@style/TEXT"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="50dp"
+        style="@style/BUTTON"
+        android:text="START"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="9dp"
+        android:rotation="90"
+        app:srcCompat="@drawable/playbutton" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/background3" />
+
+    <TextView
+        android:id="@+id/HighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background2"
+        android:includeFontPadding="true"
+        android:padding="5dp"
+        android:text="High Score: 0"
+        style="@style/TEXT"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/openSettings"
+        android:layout_width="76dp"
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <Button
+        android:id="@+id/EnterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextGridSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Enter" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/EnterBtn"
+        android:layout_alignTop="@+id/EnterBtn"
+        android:layout_alignEnd="@+id/EnterBtn"
+
+        android:layout_alignBottom="@+id/EnterBtn"
+        app:srcCompat="@drawable/background3" />
+
+</RelativeLayout>

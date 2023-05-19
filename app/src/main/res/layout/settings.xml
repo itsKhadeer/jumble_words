@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hintbtn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            style="@style/TEXT"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="@string/settings" />
+
+        <Switch
+            android:id="@+id/gameMode"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background4"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:text="@string/switch_to_timer_mode"
+            tools:ignore="UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
+
+        <Switch
+            android:id="@+id/switcher"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background4"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:text="@string/night_mode"
+            tools:ignore="UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/imageViewInfoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background4"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/TEXT"
+                android:text="@string/informationu" />
+
+            <ImageView
+                android:id="@+id/imageViewInfoButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:importantForAccessibility="no"
+                app:srcCompat="@android:drawable/ic_dialog_info"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/settingsSave"
+            style="@style/BUTTON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saveu"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
